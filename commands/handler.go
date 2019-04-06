@@ -1,7 +1,6 @@
 package commands
 
 import (
-	"fmt"
 	"os"
 	"os/exec"
 	"syscall"
@@ -27,7 +26,7 @@ func handleWithSystemGit(commandArgs []string) {
 	args[0] = basicOsCommand
 
 	args = append(args, commandArgs...)
-	fmt.Println(args)
+
 	execErr := syscall.Exec(cmd, args, env)
 	if execErr != nil {
 		panic(execErr)
