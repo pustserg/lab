@@ -1,9 +1,8 @@
 package main
 
 import (
-	"fmt"
-	"os"
 	"github.com/pustserg/lab/commands"
+	"os"
 )
 
 func main() {
